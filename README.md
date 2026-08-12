@@ -26,16 +26,15 @@ A lightweight, multi-threaded C++ password cracking and user management system b
 
 ## 📁 Project Structure
 
-```
+```text
 PasswordCracker/
 ├── CMakeLists.txt
 ├── README.md
-└── src/
-    ├── main.cpp
-    ├── UserDatabase.h
-    ├── UserDatabase.cpp
-    ├── BruteForceEngine.h
-    └── BruteForceEngine.cpp
+├── main.cpp
+├── UserDatabase.h
+├── UserDatabase.cpp
+├── BruteForceEngine.h
+└── BruteForceEngine.cpp
 ```
 
 ---
@@ -49,7 +48,7 @@ Make sure you have a C++17 compliant compiler installed (GCC, Clang, or MSVC) al
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/PasswordCracker.git](https://github.com/YOUR_USERNAME/PasswordCracker.git)
+   git clone https://github.com/YOUR_USERNAME/PasswordCracker.git
    cd PasswordCracker
    ```
 
