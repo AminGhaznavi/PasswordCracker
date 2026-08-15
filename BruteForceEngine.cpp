@@ -1,4 +1,5 @@
 #include "BruteForceEngine.h"
+#include "SHA256.h"
 #include <iostream>
 #include <vector>
 #include <thread>
@@ -15,7 +16,7 @@ bool BruteForceEngine::recursiveSearch(string current, const string& targetPass)
 
     if (current.length() == maxPassLength) {
         totalAttempts++;
-        if (current == targetPass) {
+        if (SHA256::hash(current) == targetPass) {
             foundPassword = current;
             found.store(true);
             return true;
