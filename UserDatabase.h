@@ -1,6 +1,5 @@
-#ifndef CPP_PROJECT_CION__USERDATABASE_H
-#define CPP_PROJECT_CION__USERDATABASE_H
-
+#ifndef USER_DATABASE_H
+#define USER_DATABASE_H
 
 #include <string>
 
@@ -12,10 +11,10 @@ private:
 public:
     explicit UserDatabase(const std::string& dbFile);
     bool userExists(const std::string& username);
-    bool saveUser(const std::string& username, const std::string& password);
-    std::string getPassword(const std::string& username);
+    bool saveUser(const std::string& username, const std::string& plainPassword);
+    std::string getPasswordHash(const std::string& username);
     bool deleteUser(const std::string& username, const std::string& inputAdminPass);
+    void listUsers(const std::string& inputAdminPass);
 };
 
-
-#endif //CPP_PROJECT_CION__USERDATABASE_H
+#endif // USER_DATABASE_H
