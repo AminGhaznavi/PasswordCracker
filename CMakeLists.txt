@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB SOURCES "*.cpp")
 
-add_executable(PasswordCracker ${SOURCES})
+add_executable(PasswordCracker ${SOURCES}
+        SHA256.cpp
+        SHA256.h)
 
 target_include_directories(PasswordCracker PUBLIC .)
